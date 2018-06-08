@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jqplugin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/custom.js">
+
+
+</head>
+
+<body>
+    <div class="middle" style="margin-left: 310px;
+margin-top: 60px;">
+        <span class="counter">1,234,567.00</span>
+        <span>$</span><span class="counter" style="margin-left: 60px;">1.99</span>
+        <span class="counter" style="margin-left: 60px;">12345</span>
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+</body>
+
+</html>
